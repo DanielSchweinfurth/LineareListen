@@ -27,9 +27,8 @@ public class LineareListe {
 		if(e.getPointer() != null) {
 			laenge ++;
 			getLaenge(e.getPointer());
-			return laenge;
-		}else {return 0;}
-		
+		}
+		return laenge;
 	}
 	
 	
@@ -49,18 +48,6 @@ public class LineareListe {
 		}else {return null;}
 	}
 	
-	/*
-	public Element getlast() {
-		Element verg = start;
-		if(verg != null) {
-			verg = verg.getPointer();
-		}else if(verg == null) {
-			return verg;
-			}
-	}
-	*/
-	
-	
 	public boolean istLeer() {
 		if(start == null) {
 			return true;
@@ -69,4 +56,17 @@ public class LineareListe {
 		}
 		
 	}
+
+	
+	public boolean greaterLength(LineareListe comp) {
+		if(comp.getLaenge(comp.start) >= //was für ein statmenet brauche ich hier um liste.greaterLength(zu vergleichende Liste zu machen?)) {
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+
+	
 }
+
